@@ -611,12 +611,14 @@ font-family: "Times New Roman", Times, serif;    font-size: 26px;
 }
 
 .circle img {
+    
     .circle img {
-    width: 88%;
-    height: 88%;
-    object-fit: cover;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
     border-radius: 50%;
     display: block;
+    margin: auto;
 }
 }
 
