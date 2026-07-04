@@ -397,6 +397,7 @@ document.querySelectorAll(".floating-icon[data-tooltip]").forEach(icon => {
         pointer-events:none; opacity:0; transition:opacity .2s;
         z-index:10;
     `;
+    icon.style.position = "relative";
     icon.appendChild(tip);
 
     icon.addEventListener("mouseenter", () => tip.style.opacity = "1");
