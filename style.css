@@ -337,16 +337,15 @@ font-family: "Times New Roman", Times, serif;
 
 /* ─── HERO ───────────────────────────────────────────────── */
 .hero {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.05fr .95fr;
-    align-items: center;
-    min-height:calc(100vh - 100px);
-    gap: 48px;
-    position: relative;
-    padding: 20px 0 35px;
+    .hero{
+    width:min(92%,1300px);
+    margin:40px auto 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:50px;
+    min-height:85vh;
+}
 }
 
 /* Floating icons */
@@ -438,13 +437,13 @@ font-family: "Times New Roman", Times, serif;
     50% { box-shadow: 0 4px 28px rgba(56,189,248,.6); }
 }
 
-.hero-left h1 {
-font-family: "Times New Roman", Times, serif;
-    font-size: clamp(34px, 3.8vw, 52px);
-    line-height: 1.08;
-    letter-spacing: -1px;
-    font-weight: 800;
-    margin-bottom: 16px;
+.hero-left h1{
+    font-family:"Times New Roman", Times, serif;
+    font-size:clamp(40px,4vw,60px);
+    line-height:1.1;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:18px;
 }
 
 .gradient-text {
@@ -1414,7 +1413,7 @@ footer p { color: var(--light); font-size: 14px; }
     .hero-right { display: none; }
     .fi-5,.fi-6,.fi-7,.fi-8 { display: none; }
     .fi-1,.fi-2,.fi-3,.fi-4 { display: none; }
-    .hero-left h1 { font-size: 62px; }
+    .hero-left h1 { font-size: 50px; }
     .scroll-indicator { display: none; }
 
     .about-grid { grid-template-columns: 1fr 1fr; }
@@ -1455,7 +1454,7 @@ footer p { color: var(--light); font-size: 14px; }
 }
 
 @media (max-width: 640px) {
-    .hero-left h1 { font-size: 44px; }
+    .hero-left h1 { font-size: 36px; }
     section h2 { font-size: 36px; }
     .about-grid { grid-template-columns: 1fr; }
     .hero-stats { flex-wrap: wrap; gap: 18px; }
